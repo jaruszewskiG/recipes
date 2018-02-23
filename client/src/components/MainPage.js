@@ -9,7 +9,10 @@ class MainPage extends Component {
   }
 
   render() {
-    if (!this.props.response.length) {
+    const data = this.props.data;
+
+    // Making sure we have all data before we start working with it
+    if (!data.length) {
       return null;
     }
 
@@ -19,13 +22,22 @@ class MainPage extends Component {
             <h3 className="latest-recipes-headline offset-lg-1">Latest recipes</h3>
             <div className="row">
               <div className="offset-lg-1 col-lg-4 col-md-4 col-12 recipe__left" onClick={ () => this.props.recipeThumbnailClick(0) }>
-                <RecipeThumbnail name = { this.props.response[0][0] } time = { this.props.response[0][1]} image = { this.props.response[0][2] }/>
+                <RecipeThumbnail 
+                  name = { data[0][0] } 
+                  time = { data[0][1]} 
+                  image = { data[0][2] }/>
               </div>
               <div className="col-lg-3 col-md-4 col-12 recipe__center" onClick={ () => this.props.recipeThumbnailClick(1) }>
-                <RecipeThumbnail name = { this.props.response[1][0] } time = { this.props.response[1][1]} image = { this.props.response[1][2] }/>
+                <RecipeThumbnail 
+                  name = { data[1][0] } 
+                  time = { data[1][1]} 
+                  image = { data[1][2] }/>
               </div>
               <div className="col-lg-3 col-md-4 col-12 recipe__right" onClick={ () => this.props.recipeThumbnailClick(2) }>
-                <RecipeThumbnail name = { this.props.response[2][0] } time = { this.props.response[2][1]} image = { this.props.response[2][2] }/>
+                <RecipeThumbnail 
+                  name = { data[2][0] } 
+                  time = { data[2][1]} 
+                  image = { data[2][2] }/>
               </div>
             </div>
           </div>

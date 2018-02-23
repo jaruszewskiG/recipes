@@ -33,8 +33,6 @@ class RecipeDetails extends Component {
       )
     }
 
-    console.log(preparing);
-
     return (
         <div className="container-fluid RecipeDetails">
           <div className="row">

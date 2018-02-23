@@ -16,7 +16,6 @@ app.get('/recipes', (req, res) => {
     }
 
     if(dbRecipe) {
-      console.log(dbRecipe);
       res.send({ express: dbRecipe });
     }
   });
