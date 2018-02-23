@@ -23,10 +23,8 @@
   color: white;
 }
 
-.home-link {
-  padding-left: 8.3333%;
-}
-
-#navb {
-  padding-right: 8.3333%;
+@media screen and (min-width: 992px) {
+  #navb {
+    padding-right: 8.3333%;
+  }
 }

@@ -38,7 +38,7 @@ class RecipeDetails extends Component {
     return (
         <div className="container-fluid RecipeDetails">
           <div className="row">
-            <div className="offset-md-1 col-6">
+            <div className="offset-md-1 col-lg-6 col-md-10 col-sm-12">
               <div className="recipe-thumbnail">
                 <img src={ image } className="rounded thumbnail" />
                 <h6 className="time">{ time }</h6>
@@ -51,7 +51,7 @@ class RecipeDetails extends Component {
                 { preparingArray }
               </div>
             </div>
-            <div className="col-4 ingredients">
+            <div className="col-lg-4 offset-lg-0 offset-md-1 col-md-10 col-sm-12 ingredients">
               <h4>Ingredients</h4>
               <table>
                 <tbody>

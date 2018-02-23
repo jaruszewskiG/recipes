@@ -1,14 +1,28 @@
 .recipe__left {
-  padding-right: 3px;
+  padding-bottom: 20px;
 }
 
 .recipe__center {
-  padding-right: 3px;
-  padding-left: 3px;
+  padding-bottom: 20px;
 }
 
 .recipe__right {
-  padding-left: 3px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .recipe__left {
+    padding-right: 3px;
+  }
+
+  .recipe__center {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
+  .recipe__right {
+    padding-left: 3px;
+  }
 }
 
 .MainPage {
@@ -19,7 +33,6 @@
   padding-top: 30px;
   padding-bottom: 15px;
   text-align: left;
-  margin-left: 8.3333%;
   color: #484644;
   font-weight: 600;
 }

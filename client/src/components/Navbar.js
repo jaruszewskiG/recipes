@@ -9,8 +9,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark navbar-main">
-        <a className="home-link">
+      <nav className="navbar navbar-expand-md navbar-dark navbar-main">
+        <a className="offset-lg-1">
           <img className="homeIcon" src= { homeIcon } onClick={ this.props.homeClick }></img>
         </a>
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
