@@ -9,7 +9,7 @@ class RecipeThumbnail extends Component {
       <div className="recipe-thumbnail">
         <img src={ image } className="rounded thumbnail" />
         <h6 className="time">{ time }</h6>
-        <h2 className="name">{ name }</h2>
+        <h3 className="name">{ name }</h3>
         <div className="info"></div>
       </div>
     );

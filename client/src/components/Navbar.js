@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import '../styles/Navbar.css';
+import homeIcon from '../images/Home-icon.svg'
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark navbar-main">
-        <a className="navbar-brand" href="#">Logo</a>
+        <a className="home-link">
+          <img className="homeIcon" src= { homeIcon } onClick={ this.props.homeClick }></img>
+        </a>
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
           <span className="navbar-toggler-icon"></span>
         </button>

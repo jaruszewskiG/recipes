@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import '../styles/RecipeThumbnail.css';
 import '../styles/RecipeDetails.css';
 
-class RecipeThumbnail extends Component {
+class RecipeDetails extends Component {
   render() {
     const { name, time, image, description, ingredients, preparing } = this.props; 
     let ingredientsArray = [], preparingArray = [];
+    let preparingNumbered = [];
 
     for (let i = 0; i < ingredients.length; i++) {
       let line = ingredients[i];
@@ -23,11 +24,11 @@ class RecipeThumbnail extends Component {
     }
 
     for (let i = 0; i < preparing.length; i++) {
-      preparing[i] = i + 1 + '. ' +  preparing[i];
+      preparingNumbered[i] = i + 1 + '. ' +  preparing[i];
 
       preparingArray.push(
         <p key={i}>
-          { preparing[i] }
+          { preparingNumbered[i] }
         </p>
       )
     }
@@ -35,8 +36,7 @@ class RecipeThumbnail extends Component {
     console.log(preparing);
 
     return (
-      <div className="container-fluid">
-        <div className="RecipeDetails">
+        <div className="container-fluid RecipeDetails">
           <div className="row">
             <div className="offset-md-1 col-6">
               <div className="recipe-thumbnail">
@@ -61,9 +61,8 @@ class RecipeThumbnail extends Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }
 
-export default RecipeThumbnail;
+export default RecipeDetails;

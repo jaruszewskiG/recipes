@@ -12,3 +12,21 @@
 #navb ul li a:hover {
   color: black;
 }
+
+.navbar-brand {
+  padding-left: 7.5%;
+}
+
+.homeIcon {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.home-link {
+  padding-left: 8.3333%;
+}
+
+#navb {
+  padding-right: 8.3333%;
+}

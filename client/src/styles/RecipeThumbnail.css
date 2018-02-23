@@ -10,14 +10,14 @@ height: 450px;
   top: 400px;
   left: 20px;
   color: #FFF;
-  z-index: 2
+  z-index: 2;
 }
 
 .time {
   position: absolute;
   top: 380px;
   left: 20px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
   z-index: 2
 }
 
