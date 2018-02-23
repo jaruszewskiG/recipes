@@ -1,0 +1,14 @@
+.navbar-main {
+  background-color: #ffbb00;
+  box-shadow: 0 0px 15px grey;
+}
+
+#navb ul li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFF;
+}
+
+#navb ul li a:hover {
+  color: black;
+}
