@@ -33,7 +33,7 @@ class App extends Component {
 
     this.callApi()
       .then(res => {
-        for (let i=0; i<3; i++) {
+        for (let i=0; i<res.express.length; i++) {
           resArray.push([ 
             res.express[i].name,
             res.express[i].time,
@@ -63,7 +63,6 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar 
-          active={ active }
           homeClick = { this.homeClick }/>
         {
           active === 'RecipeThumbnails' ? (
