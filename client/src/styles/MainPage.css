@@ -36,3 +36,10 @@
   color: #484644;
   font-weight: 600;
 }
+
+.recipe__left :hover, .recipe__center :hover, .recipe__right :hover {
+  transform: scaleY(1.01);
+  z-index: 5;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}

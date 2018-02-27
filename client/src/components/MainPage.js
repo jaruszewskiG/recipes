@@ -28,13 +28,13 @@ class MainPage extends Component {
                 time = { data[i][1] } 
                 image = { data[i][2] }/>
             </div>
-            <div className="col-lg-3 col-md-4 col-12 recipe__center" onClick={ () => this.props.recipeThumbnailClick(i) }>
+            <div className="col-lg-3 col-md-4 col-12 recipe__center" onClick={ () => this.props.recipeThumbnailClick(i+1) }>
               <RecipeThumbnail 
                 name = { data[i+1][0] } 
                 time = { data[i+1][1] } 
                 image = { data[i+1][2] }/>
             </div>
-            <div className="col-lg-3 col-md-4 col-12 recipe__right" onClick={ () => this.props.recipeThumbnailClick(i) }>
+            <div className="col-lg-3 col-md-4 col-12 recipe__right" onClick={ () => this.props.recipeThumbnailClick(i+2) }>
               <RecipeThumbnail 
                 name = { data[i+2][0] } 
                 time = { data[i+2][1] } 
@@ -53,7 +53,7 @@ class MainPage extends Component {
                   time = { data[i][1] } 
                   image = { data[i][2] }/>
               </div>
-              <div className="col-lg-3 col-md-4 col-12 recipe__center" onClick={ () => this.props.recipeThumbnailClick(i) }>
+              <div className="col-lg-3 col-md-4 col-12 recipe__center" onClick={ () => this.props.recipeThumbnailClick(i+1) }>
                 <RecipeThumbnail 
                   name = { data[i+1][0] } 
                   time = { data[i+1][1] } 

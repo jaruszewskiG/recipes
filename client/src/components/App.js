@@ -3,7 +3,8 @@ import logo from '../images/logo.svg';
 import '../styles/App.css';
 import Navbar from './Navbar';
 import MainPage from './MainPage';
-import RecipeDetails from './RecipeDetails'
+import RecipeDetails from './RecipeDetails';
+import AddRecipe from './AddRecipe';
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
     this.item = null;
     this.recipeThumbnailClick = this.recipeThumbnailClick.bind(this);
     this.homeClick = this.homeClick.bind(this);
+    this.addRecipeClick = this.addRecipeClick.bind(this);
   }
 
   homeClick() {
@@ -25,6 +27,10 @@ class App extends Component {
   recipeThumbnailClick(item) {
     this.setState({ active: 'RecipeDetails'});
     this.item = item;
+  }
+
+  addRecipeClick() {
+    this.setState({ active: 'AddRecipe'});
   }
 
   // When component is mounted, call api for data and assign it to 'data' state
@@ -63,7 +69,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar 
-          homeClick = { this.homeClick }/>
+          homeClick = { this.homeClick }
+          addRecipeClick = { this.addRecipeClick }/>
         {
           active === 'RecipeThumbnails' ? (
             <MainPage 
@@ -77,7 +84,9 @@ class App extends Component {
               description = { this.state.data[this.item][3] }
               ingredients = { this.state.data[this.item][4] }
               preparing = { this.state.data[this.item][5] } />
-          )  : null
+          )  : active === 'AddRecipe' ? (
+            <AddRecipe />
+          ) : null
         }
       </div>
     );

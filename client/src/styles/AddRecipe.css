@@ -1,0 +1,16 @@
+.AddRecipe {
+  padding-top: 30px;
+  font-weight: 600;
+}
+
+.AddRecipe .btn {
+  margin-top: 10px;
+}
+
+.AddRecipe .row {
+  padding-bottom: 30px;
+}
+
+.AddRecipe table {
+  width: 100%;
+}

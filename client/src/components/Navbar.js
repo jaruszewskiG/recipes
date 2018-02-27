@@ -19,7 +19,7 @@ class Navbar extends Component {
 
         <div className="collapse navbar-collapse" id="navb">
           <ul className="navbar-nav ml-auto navbar-right">
-            <li className="nav-item">
+            <li className="nav-item" onClick={ this.props.addRecipeClick }>
               <a className="nav-link" href="#">Add recipe</a>
             </li>
             <li className="nav-item">
